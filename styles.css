@@ -44,6 +44,7 @@ body{
     position:absolute;
     inset-block-start:1rem;
     inset-inline-end:1rem;
+    z-index:var(--layer-raised);
     padding:.5rem;
     background:var(--color-accent);
     color:#191919;
@@ -86,6 +87,7 @@ img{
     height:auto;
 }
 .pull-quote{
+    position:relative;
     margin:2rem 0;
     padding:1rem;
     border-inline-start:.4rem solid var(--color-accent);
