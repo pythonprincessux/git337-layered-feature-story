@@ -58,7 +58,6 @@ body {
     background: var(--color-accent);
     color: #191919;
 }
-
 main {
     display: grid;
     gap: 2rem;
@@ -128,7 +127,12 @@ main {
             grid-template-columns: 12rem minmax(0, 1fr);
             gap: 2rem;
         }
-
+.issue-badge {
+    position: absolute;
+    inset-block-start: 1rem;
+    inset-inline-end: 1rem;
+    z-index: var(--layer-raised);
+}
         .story-guide {
             position: sticky;
             inset-block-start: 1rem;
