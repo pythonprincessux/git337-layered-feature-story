@@ -54,9 +54,9 @@ main{
     max-width:72rem;
     margin:auto;
     padding:var(--space-3);
-}
 article{
-    min-width:0;
+    min-width: 0;
+    max-width: 48rem;
 }
 article section{
     display:flow-root;
@@ -67,6 +67,7 @@ article section{
     align-self:start;
     padding:1rem;
     border:1px solid var(--color-border);
+    background:var(--color-surface);
 }
 .story-guide a{
     display:block;
@@ -102,8 +103,9 @@ img{
 }
 @media (min-width:52rem){
     main{
-        grid-template-columns:14rem 1fr;
-    }
+    grid-template-columns: 12rem minmax(0, 1fr);
+    gap: 2rem;
+}
     .story-guide{
         position:sticky;
         inset-block-start:1rem;
